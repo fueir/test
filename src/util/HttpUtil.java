@@ -8,12 +8,12 @@ import java.net.URL;
 
 public class HttpUtil {
 	
-	public static void sendHttpRequest(final String address,final HttpCallbackListener listener){
+	public static void sendHttpRequest(final String address,
+			final HttpCallbackListener listener){
 		new Thread(new Runnable(){
 
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
 				HttpURLConnection connection =null;
 				try{
 					URL url = new URL(address);
